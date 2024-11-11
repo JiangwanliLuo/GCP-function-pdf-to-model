@@ -1,0 +1,1 @@
+gcloud functions deploy process_gcs_event --region australia-southeast1  --runtime python39 --trigger-resource azure-invoice-pdf--model-input --trigger-event google.storage.object.finalize --entry-point main  --timeout 540s --memory 8192MB 
